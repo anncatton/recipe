@@ -91,6 +91,7 @@ h3 {
 	-webkit-border-radius: 100%;
 	object-fit: cover;
 }
+
 .ingredient-image-hidden {
 	width: 500px;
 	height: 20px;
@@ -164,34 +165,6 @@ header {
 	font-family: Didot, serif;
 }
 
-/* .purchased {
-	border: 1px solid grey;
-	width: 20px;
-	height: 20px;
-	margin: 15px;
-	-webkit-border-radius: 100%;
-	position: relative;
-	left: 650px;
-	bottom: 80px;
-} */
-
-/* .is-purchased {
-	border: 1px solid grey;
-	width: 20px;
-	height: 20px;
-	-webkit-border-radius: 100%;
-	position: relative;
-	left: 650px;
-	bottom: 80px;
-	background-color: grey;
-} */
-
-.purchases {
-	position: relative;
-	right: 10px;
-	list-style-type: none;
-}
-
 #hide-images {
  	background-color: #E07D80;
  	color: beige;
@@ -205,10 +178,10 @@ header {
 	text-transform: uppercase;
 	padding-top: 10px;
 	padding-right: 5px;
-	
 }
 
-.hidden {
+/*using the visibility or the height/width settings both don't create the display error
+*/.hidden {
 /* 	visibility: hidden; */
 	height: 0%;
 	width: 0%;
