@@ -14,7 +14,7 @@ $(document).ready(function() {
 // also, when these elements disappear, the text either before or after sometimes bolds somewhat or even
 // doubles, like 2 words laid over each other
 // not every <b> element disappears, just some of them, and not always the same ones
-		$('.process-image').toggle('fast');
+		$('.process-image').toggle('slow');
 
 		$('#intro-image').toggle('slow');
 // 		$('.ingredient-image').toggle('slow');

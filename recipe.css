@@ -180,14 +180,15 @@ header {
 	padding-right: 5px;
 }
 
-/*using the visibility or the height/width settings both don't create the display error
+/*using either the visibility or the height/width settings doesn't create the display error
 */.hidden {
 /* 	visibility: hidden; */
 	height: 0%;
 	width: 0%;
 }
 
-li strong, li b {
+/*the li b elements are the ones that disappear. tried setting them as <span> or <strong> and the same thing occurred
+*/li strong, li b {
 	color: #E07D80;
 	font-weight: 500;
 }
