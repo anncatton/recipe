@@ -50,12 +50,6 @@ h3 {
   float: right;
 }
 
-.ingredient-text {
-  position: relative;
-  bottom: 35px;
-  left: 10px;
-}
-
 .list {
   background-color: #E4D7C2;
   padding-top: 20px;
@@ -66,18 +60,13 @@ h3 {
 
 .ingredient-list {
   width: 55%;
+}
 
+.ingredient-list-item {
+  width: 500px;
+  -webkit-transition: all 1.3s ease;
+  cursor: pointer;
 }
-.equipment-list {
-  width: 25%;
-  float: right;
-  text-align: right;
-  padding-right: 40px;
-}
-/* 
-.ingredient-image {
-  display: none;
-} */
 
 .ingredient-image {
   width: 60px;
@@ -88,20 +77,27 @@ h3 {
   object-fit: cover;
 }
 
+.ingredient-text {
+  position: relative;
+  bottom: 35px;
+  left: 10px;
+}
+
 .ingredient-list-click {
   width: 300px;
   -webkit-transform: translateX(180px) scale(1.6);
   -webkit-transition: all 1s ease;
 }
 
-.ingredient-list-item {
-  width: 500px;
-  -webkit-transition: all 1.3s ease;
-  cursor: pointer;
+.equipment-list {
+  width: 25%;
+  float: right;
+  text-align: right;
+  padding-right: 40px;
 }
 
 .equipment-list-item {
-  height: 70px;
+/*   height: 70px; */
 }
 
 .cook-time-info {
@@ -172,7 +168,7 @@ header {
 }
 
 li strong, li b {
-  color: #E07D80;
+  color: #e07d80;
   font-weight: 500;
 }
 
