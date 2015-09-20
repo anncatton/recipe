@@ -24,14 +24,6 @@ img {
   -webkit-filter: drop-shadow(15px 15px 10px #aaa);
 }
 
-/* .image-container {
-    height: 300px;
-    width: 400px;
-    padding: 5px;
-    overflow: hidden;
-    -webkit-border-radius: 15px 20px 15px;
-} */
-
 h1 {
   line-height: 1.0;
 }
@@ -73,15 +65,19 @@ h3 {
 }
 
 .ingredient-list {
-  width: 65%;
+  width: 55%;
 
 }
 .equipment-list {
-  width: 20%;
+  width: 25%;
   float: right;
   text-align: right;
   padding-right: 40px;
 }
+/* 
+.ingredient-image {
+  display: none;
+} */
 
 .ingredient-image {
   width: 60px;
@@ -92,19 +88,6 @@ h3 {
   object-fit: cover;
 }
 
-.ingredient-image-hidden {
-  width: 500px;
-  height: 20px;
-  -webkit-transition: all 1.3s ease;
-}
-
-/*.ingredient-list-item:hover {
-  font-size: 10px;
-  width: 300px;
-  -webkit-transform: translateX(180px) scale(1.7);
-  -webkit-transition: all 1s ease;
-}*/
-
 .ingredient-list-click {
   width: 300px;
   -webkit-transform: translateX(180px) scale(1.6);
@@ -113,8 +96,8 @@ h3 {
 
 .ingredient-list-item {
   width: 500px;
-  height: 100px;
   -webkit-transition: all 1.3s ease;
+  cursor: pointer;
 }
 
 .equipment-list-item {
@@ -178,17 +161,17 @@ header {
   text-transform: uppercase;
   padding-top: 10px;
   padding-right: 5px;
+  opacity: 0.8;
+  cursor: pointer;
 }
 
-/*using either the visibility or the height/width settings doesn't create the display error
-*/.hidden {
+.hidden {
 /*  visibility: hidden; */
   height: 0%;
   width: 0%;
 }
 
-/*the li b elements are the ones that disappear. tried setting them as <span> or <strong> and the same thing occurred
-*/li strong, li b {
+li strong, li b {
   color: #E07D80;
   font-weight: 500;
 }
