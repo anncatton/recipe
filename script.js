@@ -6,16 +6,16 @@ $(document).ready(function() {
 
     $('.process-image-large').toggle(300);
     $('#intro-image').toggle(300);
+    $('.ingredient-image').toggle(100);
+    $('.ingredient-text').toggle(100);
+    $('.ingredient-list span').toggleClass('ingredient-text-only-display');
     $('#hide-images').html($('#hide-images').text() == 'Show Images' ? 'Hide Images' : 'Show Images');
+
   });
-
-  // $('.ingredient-image').hover(function() {
-  //   $('.ingredient-list').toggleClass("expanded-menu");
-  // });
-
+  
   $('.ingredient-image').hover(function() {
     $(this).next().toggleClass("ingredient-text");
-    $(this).next().toggleClass("show-ingredient-text");
+    $(this).next().toggleClass("ingredient-text-popup");
   });
 
 });
