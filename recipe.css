@@ -80,11 +80,19 @@ h3 {
 
 .ingredient-list {
   background-color: #eee;
-  padding-top: 17px;
+  padding-top: 12px;
   padding-bottom: 10px;
   padding-left: 10px;
   width: 100%;
-  margin-bottom: 8rem;
+  margin-bottom: 3rem;
+}
+
+.ingredient-text-only-display {
+  width: 5rem;
+  text-align: left;
+  vertical-align: middle;
+  /* display: inline; */
+  font-size: 0.95rem;
 }
 
 /* .expanded-menu {
@@ -96,10 +104,17 @@ h3 {
   position: relative;
   cursor: pointer;
   display: inline;
+  margin: 0.6rem;
+}
+
+.list-item {
+  position: relative;
+  cursor: pointer;
+  display: inline;
   margin: 10px;
 }
 
-.show-ingredient-text {
+.ingredient-text-popup {
   display: block;
   position: absolute;
   top: 50px;
@@ -124,25 +139,13 @@ h3 {
   transition: all 1.3s ease;
   border-radius: 100%;
   -webkit-filter: brightness(1.2) saturate(85%) drop-shadow(15px 15px 10px #aaa);
-  /* don't need in firefox? */
+  /* don't need in firefox? or maybe in older versions? */
   -moz-filter: brightness(1.2) saturate(85%) drop-shadow(15px 15px 10px #aaa);
   filter: brightness(1.2) saturate(85%) drop-shadow(15px 15px 10px #aaa);
 }
 
 /* right now in safari the drop-shadow blur is correct only during transition */
-/* maybe try doing this as a hover effect in css and see if it works any better?
-*/
-/* change to -list-hover if you leave as an effect on hover */
-/*.ingredient-list-click {
-  -webkit-transform: scale(1.6);
-  -moz-transform: scale(1.6);
-  transform: scale(1.6);
-  -webkit-transition: all 1.3s ease;
-  -moz-transition: all 1.3s ease;
-  transition: all 1.3s ease;
-}*/
 
-/* why did i change this to jquery anyway? */
 .ingredient-image:hover {
   -webkit-transform: scale(1.6);
   -moz-transform: scale(1.6);
@@ -154,7 +157,6 @@ h3 {
 
 .equipment-list {
   width: 25%;
-  display: none;
 }
 
 .brighten {
