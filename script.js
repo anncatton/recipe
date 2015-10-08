@@ -2,22 +2,19 @@ $(document).ready(function() {
 
   $('#hide-images').click(function() {
 
-// toggleClass with .hidden doesn't create the display error
-//    $('.process-image').toggleClass("hidden");
+   // $('.process-image-large').toggleClass("hidden");
 
-    // $('.ingredient-image').toggle(300);
-    // $('.ingredient-text').toggle(300);
-    $('.process-image').toggle(400);
-    $('#intro-image').toggle(400);
+    $('.process-image-large').toggle(300);
+    $('#intro-image').toggle(300);
+
+    $('.ingredient-image').toggle(100);
+    $('.ingredient-list span').toggleClass('ingredient-text-only-display');
     $('#hide-images').html($('#hide-images').text() == 'Show Images' ? 'Hide Images' : 'Show Images');
   });
-
-  // $('ingredient-image').click(function() {
-  //   $('ingredient-text').toggleClass('hidden');
-  // });
-
-  // $('.ingredient-image').click(function() {
-  //   $(this).toggleClass('ingredient-list-click');
-  // });
+  
+  $('.ingredient-image').hover(function() {
+    $(this).next().toggleClass("ingredient-text");
+    $(this).next().toggleClass("ingredient-text-popup");
+  });
 
 });
