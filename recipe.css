@@ -1,5 +1,6 @@
 body {
-  background-color: #FFFDFA;
+  background-color: hsla(34,31%,97%,1);
+  /* background-color: #FFFDFA; */
   font-family: Candara;
   color: #773C03;
   font-size: 16px;
