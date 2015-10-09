@@ -17,4 +17,9 @@ $(document).ready(function() {
     $(this).next().toggleClass("ingredient-text-popup");
   });
 
+  $('.process-step li').dblclick(function() {
+    $(this).toggleClass('bookmark-highlight');
+    $(this).toggleClass('bookmark');
+  });
+  
 });
