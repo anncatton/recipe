@@ -16,10 +16,10 @@ $(document).ready(function() {
     $(this).next().toggleClass("ingredient-text");
     $(this).next().toggleClass("ingredient-text-popup");
   });
-
-  $('.process-step li').dblclick(function() {
-    $(this).toggleClass('bookmark-highlight');
-    $(this).toggleClass('bookmark');
+  
+  $('.slide-button').click(function() {
+    $(this).next().slideToggle(500);
+    $(this).html($(this).text() == 'Done this step' ? 'Review this step' : 'Done this step');
   });
   
 });
