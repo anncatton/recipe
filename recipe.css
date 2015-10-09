@@ -209,15 +209,9 @@ h3 {
   text-align: justify;
 }
 
-/* .process-image {
-  display: inline;
-  height: 15rem;
-  width: 19rem;
-}
- */
 .process-image-large {
   position: relative;
-  height: 17rem;
+  height: 19rem;
   width: 30rem;
   margin-bottom: 2rem;
   margin-left: auto;
