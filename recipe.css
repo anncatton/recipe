@@ -141,8 +141,6 @@ h3 {
   filter: brightness(1.2) saturate(85%) drop-shadow(15px 15px 10px #aaa);
 }
 
-/* right now in safari the drop-shadow blur is correct only during transition */
-
 .ingredient-image:hover {
   -webkit-transform: scale(1.6);
   -moz-transform: scale(1.6);
@@ -158,6 +156,7 @@ h3 {
   text-align: left;
   vertical-align: top;
   font-size: 0.95rem;
+  font-weight: 600;
 }
 
 .equipment-list {
@@ -270,11 +269,16 @@ a {
 }
 
 .purchased {
-  -webkit-filter: saturate(10%) contrast(150%) drop-shadow(3px 3px 1px #555) opacity(0.7);
+  -webkit-filter: saturate(0%) contrast(180%) drop-shadow(3px 3px 1px #555) opacity(0.7);
+  -moz-filter: saturate(0%) contrast(180%) drop-shadow(3px 3px 1px #555) opacity(0.7);
+  filter: saturate(0%) contrast(180%) drop-shadow(3px 3px 1px #555) opacity(0.7);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 .text-purchased {
-  font-weight: 600;
+  font-weight: 100;
 }
 
 .ingredient-note {
