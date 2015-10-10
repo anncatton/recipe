@@ -29,4 +29,5 @@ $(document).ready(function() {
     $(this).html($(this).text() == 'Done this step' ? 'Review this step' : 'Done this step');
     $(this).prev().slideToggle(200);
   });
+  
 });
