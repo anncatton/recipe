@@ -8,7 +8,7 @@ $(document).ready(function() {
     $('#intro-image').toggle(300);
 
     $('.ingredient-image').toggle(100);
-    $('.ingredient-list span').toggleClass('ingredient-text-only-display');
+    $('span.ingredient-text').toggleClass('ingredient-text-only-display');
     $('#hide-images').html($('#hide-images').text() == 'Show Images' ? 'Hide Images' : 'Show Images');
   });
   
@@ -17,9 +17,19 @@ $(document).ready(function() {
     $(this).next().toggleClass("ingredient-text-popup");
   });
 
+  $('.ingredient-image').click(function() {
+    $(this).toggleClass('purchased');
+    $(this).next().toggleClass('text-purchased');
+  });
+
+  $('span.ingredient-text').click(function() {
+    $(this).toggleClass('text-purchased');
+    $(this).prev().toggleClass('purchased');
+
+  });
+  
   $('.slide-button').click(function() {
     $(this).html($(this).text() == 'Done this step' ? 'Review this step' : 'Done this step');
-    $(this).next().slideToggle(200);
+    $(this).prev().slideToggle(200);
   });
-    
 });

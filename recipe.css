@@ -1,9 +1,8 @@
 html {
   background-color: hsla(34,31%,97%,1);
-  /* background-color: #FFFDFA; */
   font-family: Helvetica, sans-serif;
   color: #773C03;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 100;
   line-height: 1.5;
 }
@@ -78,17 +77,20 @@ h3 {
 }
 
 .list {
-  border-radius: 10px;
-  list-style-type: none;
+
 }
 
 .ingredient-list {
+  border-radius: 10px;
+  list-style-type: none;
   background-color: #eee;
   padding-top: 12px;
   padding-bottom: 10px;
   padding-left: 10px;
   width: 100%;
   margin-bottom: 3rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ingredient-list-item {
@@ -118,8 +120,8 @@ h3 {
   height: auto;
   text-align: center;
   vertical-align: center;
-  background-color: #ddd;
-  border-radius: 10px;
+  background-color: #eee;
+  border-radius: 5px;
 }
 
 .ingredient-text {
@@ -152,14 +154,14 @@ h3 {
 
 .ingredient-text-only-display {
   display: inline-block;
-  width: 5rem;
+  width: 5.5rem;
   text-align: left;
-  vertical-align: middle;
+  vertical-align: top;
   font-size: 0.95rem;
 }
 
 .equipment-list {
-  width: 25%;
+  width: 55%;
 }
 
 .brighten {
@@ -188,10 +190,6 @@ h3 {
   padding-top: 50px;
 }
 
-.process h3 {
-  text-align: center;
-}
-
 .process {
   width: 60%;
   margin-left: auto;
@@ -200,8 +198,15 @@ h3 {
   border-radius: 10px;
   padding-right: 2%;
   padding-top: 0.1rem;
-  padding-left: 1%;
   padding-bottom: 1rem;
+}
+
+.process h3 {
+  padding-left: 3rem;
+}
+
+.process ol {
+  list-style-type: circle;
 }
 
 .process li {
@@ -264,8 +269,25 @@ a {
   font-weight: 600;
 }
 
+.purchased {
+  -webkit-filter: saturate(10%) contrast(150%) drop-shadow(3px 3px 1px #555) opacity(0.7);
+}
+
+.text-purchased {
+  font-weight: 600;
+}
+
+.ingredient-note {
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  font-family: Didot, serif;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
 .slide-button {
-  width: 8rem;
+  width: 20%;
   text-align: center;
   border: 0.1rem solid #bbb;
   border-radius: 5px;
