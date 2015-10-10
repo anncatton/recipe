@@ -25,7 +25,6 @@ $(document).ready(function() {
   $('span.ingredient-text').click(function() {
     $(this).toggleClass('text-purchased');
     $(this).prev().toggleClass('purchased');
-
   });
   
   $('.slide-button').click(function() {
