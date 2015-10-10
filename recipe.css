@@ -1,5 +1,4 @@
 html {
-/*   background-color: hsla(34,31%,97%,1); */
   background-color: #FAF8F5;
   font-family: Helvetica, sans-serif;
   color: #773C03;
@@ -25,29 +24,6 @@ img {
   -ms-filter: brightness(115%) saturate(85%) drop-shadow(15px 15px 0.8em #777);
   filter: brightness(115%) saturate(85%) drop-shadow(15px 15px 10px #aaa);
 }
-
-/* .container {
-  width: 100%;
-  display: inline-block;
-}
-
-.img-container-medium {
-  height: 175px;
-  width: 275px;
-  overflow: hidden;
-}
-
-.img-container-medium {
-  height: 230px;
-  width: 380px;
-  overflow: hidden;
-}
-
-.img-container-large {
-  height: 330px;
-  width: 450px;
-  overflow: hidden;
-} */
 
 h1, h2, h3, h4, #hide-images {
   font-family: Didot, serif;
@@ -132,12 +108,15 @@ h3 {
   height: 60px;
   display: inline;
   object-fit: cover;
-  transition: all 1.3s ease;
   border-radius: 100%;
   -webkit-filter: brightness(1.2) saturate(85%) drop-shadow(15px 15px 10px #aaa);
   -moz-filter: brightness(1.2) saturate(85%) drop-shadow(15px 15px 10px #aaa);
   -ms-filter: brightness(1.2) saturate(85%) drop-shadow(15px 15px 10px #aaa);
   filter: brightness(1.2) saturate(85%) drop-shadow(15px 15px 10px #aaa);
+  -webkit-transition: all 1.3s ease;
+  -moz-transition: all 1.3s ease;
+  -ms-transition: all 1.3s ease;
+  transition: all 1.3s ease;
 }
 
 .ingredient-image:hover {
@@ -146,7 +125,7 @@ h3 {
   -ms-transform: scale(1.6);
   transform: scale(1.6);
   -webkit-transition: all 1.3s ease;
-  -moz-transition: all 1.3s ease;
+  -moz-transition: all 1.3s ease; */
   -ms-transition: all 1.3s ease;
   transition: all 1.3s ease;
 }
@@ -248,7 +227,7 @@ header {
   text-transform: uppercase;
   padding-top: 15px;
   padding-right: 5px;
-  opacity: 0.8;
+  opacity: 0.7;
   cursor: pointer;
 }
 
@@ -264,10 +243,11 @@ a {
 }
 
 .purchased {
-  -webkit-filter: saturate(0%) contrast(180%) drop-shadow(3px 3px 1px #555) opacity(0.7);
-  -moz-filter: saturate(0%) contrast(180%) drop-shadow(3px 3px 1px #555) opacity(0.7);
-  -ms-filter: saturate(0%) contrast(180%) drop-shadow(3px 3px 1px #555) opacity(0.7);
-  filter: saturate(0%) contrast(180%) drop-shadow(3px 3px 1px #555) opacity(0.7);
+  opacity: 0.7;
+  -webkit-filter: saturate(0%) contrast(180%) drop-shadow(3px 3px 1px #555);
+  -moz-filter: saturate(0%) contrast(180%) drop-shadow(3px 3px 1px #555);
+  -ms-filter: saturate(0%) contrast(180%) drop-shadow(3px 3px 1px #555);
+  filter: saturate(0%) contrast(180%) drop-shadow(3px 3px 1px #555);
   -webkit-transform: rotateY(180deg);
   -moz-transform: rotateY(180deg);
   -ms-transform: rotateY(180deg);
