@@ -2,8 +2,6 @@ $(document).ready(function() {
 
   $('#hide-images').click(function() {
 
-   // $('.process-image-large').toggleClass("hidden");
-
     $('.process-image-large').toggle(300);
     $('#intro-image').toggle(300);
 
